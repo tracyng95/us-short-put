@@ -1,1 +1,34 @@
-@file:///tmp/publish_index_wrapped.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>US Short Put Report — NVDA & peers — 2026-09-20</title>
+<meta name="description" content="Self-contained Short Put screening report including NVDA."/>
+<!-- Report: Short Put | tickers include NVDA | 2026-09-20 -->
+<style>body{font-family:system-ui,sans-serif;padding:2rem;max-width:40rem;margin:auto} .err{color:#b00}</style>
+</head>
+<body>
+<p>Loading Short Put report (NVDA)…</p>
+<script>
+(async () => {
+  const n = 5;
+  const parts = await Promise.all(
+    Array.from({length: n}, (_, i) =>
+      fetch('p' + i + '.b64').then(r => { if (!r.ok) throw new Error('chunk ' + i + ' ' + r.status); return r.text(); })
+    )
+  );
+  const b64 = parts.join('');
+  const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+  const ds = new DecompressionStream('gzip');
+  const stream = new Blob([bin]).stream().pipeThrough(ds);
+  const html = await new Response(stream).text();
+  document.open();
+  document.write(html);
+  document.close();
+})().catch(e => {
+  document.body.innerHTML = '<p class="err">Failed to load report: ' + e + '</p><p>Open via raw.githack or jsDelivr (not raw.githubusercontent — CORS).</p>';
+});
+</script>
+<noscript>Enable JavaScript to view the Short Put (NVDA) report.</noscript>
+</body>
+</html>
