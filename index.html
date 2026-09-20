@@ -1,20 +1,531 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/>
-<title>US Short Put Report — NVDA — 2026-09-20</title>
-<meta name="description" content="Short Put screening report including NVDA"/>
-<!-- Short Put | NVDA | gzip parts b0..b8 -->
-</head><body>
-<p>Loading Short Put report (NVDA)…</p>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美股 Short Put 篩選報告 · 2026-09-20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e8eef3;--bg-elev:#f4f7fa;--bg-card:#fff;--text:#0b1f33;--muted:#4a5d73;--border:#c5d0dc;--income:#0d9488;--income-bg:rgba(13,148,136,.12);--risk:#dc2626;--risk-bg:rgba(220,38,38,.1);--amber:#d97706;--amber-bg:rgba(217,119,6,.12);--accent:#0891b2;--shadow:0 1px 3px rgba(11,31,51,.08),0 8px 24px rgba(11,31,51,.06);--radius:14px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0c1520;--bg-elev:#121c2a;--bg-card:#162233;--text:#e6eef7;--muted:#9bb0c5;--border:#2a3c52;--shadow:0 1px 3px rgba(0,0,0,.35),0 8px 24px rgba(0,0,0,.25)}}
+:root[data-theme=dark]{--bg:#0c1520;--bg-elev:#121c2a;--bg-card:#162233;--text:#e6eef7;--muted:#9bb0c5;--border:#2a3c52}
+:root[data-theme=light]{--bg:#e8eef3;--bg-elev:#f4f7fa;--bg-card:#fff;--text:#0b1f33;--muted:#4a5d73;--border:#c5d0dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans TC","IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:15px}a{color:var(--accent)}.wrap{max-width:1120px;margin:0 auto;padding:0 16px 64px}.sticky-nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg-elev) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:center;justify-content:space-between;padding:8px 16px;flex-wrap:wrap}.sticky-nav a{padding:4px 10px;border-radius:999px;font-size:13px;font-weight:600;background:var(--bg-card);border:1px solid var(--border);color:var(--text);text-decoration:none}#theme-toggle{border:1px solid var(--border);background:var(--bg-card);color:var(--text);border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;font-size:13px;font-weight:600}header{padding:28px 0 12px}h1{font-family:"IBM Plex Sans","Noto Sans TC",sans-serif;font-size:clamp(1.5rem,4vw,2rem);margin:0 0 8px}h2{font-family:"IBM Plex Sans","Noto Sans TC",sans-serif;font-size:1.35rem;margin:0 0 14px}.meta-row{display:flex;flex-wrap:wrap;gap:10px 18px;color:var(--muted);font-size:14px;margin-bottom:14px}.meta-row strong{color:var(--text)}.disclaimer{background:var(--risk-bg);border:1px solid color-mix(in srgb,var(--risk) 35%,var(--border));border-radius:var(--radius);padding:12px 16px;font-size:14px;font-weight:500}.disclaimer strong{color:var(--risk)}section{margin:28px 0}.hero-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:18px 0 8px}.hero-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);color:inherit;text-decoration:none}.hero-card:hover{border-color:var(--accent);text-decoration:none}.hero-ticker{font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:1.25rem}.hero-name{color:var(--muted);font-size:13px;margin:2px 0 8px}.hero-contract{font-weight:600;font-size:13px;margin-bottom:10px;color:var(--risk)}.hero-metrics{display:grid;grid-template-columns:1fr 1fr;gap:6px 8px;font-size:12px}.hero-metrics .lbl{display:block;color:var(--muted);font-size:11px}.hero-metrics .val{font-weight:600;font-family:"IBM Plex Sans",sans-serif}.badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:700}.badge.lg{font-size:14px;padding:4px 12px}.rating-a{background:var(--income-bg);color:var(--income)}.rating-b{background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}.rating-cond{background:var(--amber-bg);color:var(--amber)}.income{color:var(--income)!important}.risk{color:var(--risk)!important}.amber{color:var(--amber)!important}.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:14px 0}.tile{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px;box-shadow:var(--shadow)}.tile-lbl{font-size:12px;color:var(--muted)}.tile-val{font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:1.15rem}.tile-sub{font-size:11px;color:var(--muted)}.card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}.pick-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}.pick-ticker{font-family:"IBM Plex Sans",sans-serif;font-weight:700}.pick-cname{font-size:14px;color:var(--muted);font-weight:500}.pick-sub{color:var(--muted);font-size:13px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}@media(max-width:800px){.two-col{grid-template-columns:1fr}}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:left}th{color:var(--muted);font-weight:600;width:40%}.suggest-table th{width:38%}.chart-panel{background:var(--bg-elev);border:1px solid var(--border);border-radius:var(--radius);padding:12px;margin:12px 0}.chart-controls{display:flex;flex-wrap:wrap;gap:10px 14px;margin-bottom:10px;font-size:13px}.chart-controls label{display:flex;align-items:center;gap:6px}.chart-controls input[type=number]{width:90px;padding:4px 6px;border:1px solid var(--border);border-radius:8px;background:var(--bg-card);color:var(--text)}.chart-controls input[type=range]{width:120px}.btn-group{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}.btn-group button{border:1px solid var(--border);background:var(--bg-card);color:var(--text);border-radius:999px;padding:4px 10px;font:inherit;font-size:12px;font-weight:600;cursor:pointer}.btn-group button.active,.risk-btn.active{border-color:var(--risk);color:var(--risk)}.live-panel{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;margin-top:10px}.live-item{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:8px}.live-item .lbl{display:block;font-size:11px;color:var(--muted)}.live-item .val{font-family:"IBM Plex Sans",sans-serif;font-weight:700}.fund-list{margin:0;padding-left:18px}.fund-list li{margin:4px 0}.muted{color:var(--muted);font-size:13px}ol.exec-list{padding-left:20px}ol.exec-list li{margin:8px 0}.reject-table td,.reject-table th{font-size:13px}code{font-size:12px;background:var(--bg-elev);padding:1px 6px;border-radius:6px}footer{margin-top:40px;padding:20px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<nav class="sticky-nav">
+  <div class="nav-links">
+    <a href="#market">市場</a>
+    <a href="#picks">標的</a>
+    <a href="#rejected">剔除</a>
+    <a href="#exec">執行</a>
+    <a href="#gaps">缺口</a>
+  </div>
+  <button type="button" id="theme-toggle" aria-label="切換主題">主題</button>
+</nav>
+<div class="wrap">
+<header class="report-header">
+  <h1>美股 Short Put 篩選報告</h1>
+  <div class="meta-row">
+    <span><strong>資料截至</strong> 2026-09-20 20:09 HKT（美股現貨／期權為 2026-09-18 收盤）</span>
+    <span><strong>目標到期</strong> 2026-10-23（33 DTE）</span>
+    <span><strong>備選到期</strong> 2026-10-30（40 DTE，含 FOMC）</span>
+  </div>
+  <div class="disclaimer" role="note">
+    <strong>重要：</strong>權利金與 Delta 須以即時期權鏈核實。本報告非投資建議；周末重跑仍沿用上一個美股交易日收盤與 Yahoo 期權鏈快照。
+  </div>
+</header>
+
+<section id="picks">
+  <h2>本期入選（5）</h2>
+  <div class="hero-row">
+    <a class="hero-card" href="#pick-nvda">
+      <div class="hero-top"><span class="hero-ticker">NVDA</span><span class="badge rating-a">A</span></div>
+      <div class="hero-name">輝達</div>
+      <div class="hero-contract">$210 Put · 10/23</div>
+      <div class="hero-metrics">
+        <div><span class="lbl">現價</span><span class="val">$222.27</span></div>
+        <div><span class="lbl">權利金</span><span class="val income">$3.65</span></div>
+        <div><span class="lbl">Delta</span><span class="val risk">-0.253</span></div>
+        <div><span class="lbl">緩衝</span><span class="val">5.52%</span></div>
+      </div>
+    </a>
+    <a class="hero-card" href="#pick-amzn">
+      <div class="hero-top"><span class="hero-ticker">AMZN</span><span class="badge rating-a">A</span></div>
+      <div class="hero-name">亞馬遜</div>
+      <div class="hero-contract">$240 Put · 10/23</div>
+      <div class="hero-metrics">
+        <div><span class="lbl">現價</span><span class="val">$253.71</span></div>
+        <div><span class="lbl">權利金</span><span class="val income">$3.58</span></div>
+        <div><span class="lbl">Delta</span><span class="val risk">-0.243</span></div>
+        <div><span class="lbl">緩衝</span><span class="val">5.40%</span></div>
+      </div>
+    </a>
+    <a class="hero-card" href="#pick-mrk">
+      <div class="hero-top"><span class="hero-ticker">MRK</span><span class="badge rating-b">B</span></div>
+      <div class="hero-name">默沙東</div>
+      <div class="hero-contract">$138 Put · 10/23</div>
+      <div class="hero-metrics">
+        <div><span class="lbl">現價</span><span class="val">$146.87</span></div>
+        <div><span class="lbl">權利金</span><span class="val income">$1.62</span></div>
+        <div><span class="lbl">Delta</span><span class="val risk">-0.230</span></div>
+        <div><span class="lbl">緩衝</span><span class="val">6.04%</span></div>
+      </div>
+    </a>
+    <a class="hero-card" href="#pick-crm">
+      <div class="hero-top"><span class="hero-ticker">CRM</span><span class="badge rating-cond">條件式</span></div>
+      <div class="hero-name">Salesforce</div>
+      <div class="hero-contract">$215 Put · 10/23</div>
+      <div class="hero-metrics">
+        <div><span class="lbl">現價</span><span class="val">$237.92</span></div>
+        <div><span class="lbl">權利金</span><span class="val income">$3.04</span></div>
+        <div><span class="lbl">Delta</span><span class="val risk">-0.179</span></div>
+        <div><span class="lbl">緩衝</span><span class="val">9.63%</span></div>
+      </div>
+    </a>
+    <a class="hero-card" href="#pick-adbe">
+      <div class="hero-top"><span class="hero-ticker">ADBE</span><span class="badge rating-cond">條件式</span></div>
+      <div class="hero-name">Adobe</div>
+      <div class="hero-contract">$230 Put · 10/23</div>
+      <div class="hero-metrics">
+        <div><span class="lbl">現價</span><span class="val">$248.92</span></div>
+        <div><span class="lbl">權利金</span><span class="val income">$3.50</span></div>
+        <div><span class="lbl">Delta</span><span class="val risk">-0.228</span></div>
+        <div><span class="lbl">緩衝</span><span class="val">7.60%</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="market" class="card">
+  <h2>市場背景</h2>
+  <div class="tiles">
+    <div class="tile"><div class="tile-lbl">標普 500</div><div class="tile-val">7650.5</div><div class="tile-sub">2026-09-18</div></div>
+    <div class="tile"><div class="tile-lbl">VIX</div><div class="tile-val">14.81</div><div class="tile-sub">波動偏靜</div></div>
+    <div class="tile"><div class="tile-lbl">美債 10Y</div><div class="tile-val">4.998%</div><div class="tile-sub">更高更久</div></div>
+    <div class="tile"><div class="tile-lbl">WTI 油價</div><div class="tile-val">$96.08</div><div class="tile-sub">週內回落</div></div>
+    <div class="tile"><div class="tile-lbl">Fed Funds</div><div class="tile-val">3.75–4.00%</div><div class="tile-sub">9/16 升息</div></div>
+    <div class="tile"><div class="tile-lbl">下一次 FOMC</div><div class="tile-val">10/28</div><div class="tile-sub">10/27–28 會議</div></div>
+  </div>
+  <p>升息後盤勢：聯準會於 9 月 16 日將聯邦基金利率目標區間上調至 3.75%–4.00%；SEP 路徑顯示年底前仍有進一步緊縮風險。標普 500 於 9 月 18 日收 7650.5。VIX 14.81 相對平靜，可能低估 10 月 CPI／FOMC 事件風險。美債 10 年期近 5%。WTI 約 $96.08（CL=F，週五盤）— 自週內約 $100 高位回落，能源 Short Put 仍暫緩；留意 10 月 14 日 CPI。</p>
+  <p><strong>到期選擇：</strong>優先 2026-10-23（33 DTE）於 30–40 窗口且在 10/28 FOMC 之前；10/30 含 FOMC＋GDP／PCE 週。</p>
+  <p class="muted">部位：VIX~15 但利率~5%、油價仍偏高，單一標的風險建議 ≤ 流動淨值 1–2%；CRM／ADBE 半倉；避免 NVDA+AMZN+CRM 相關成長貝塔過度重疊。</p>
+</section>
+
+<!-- PICK NVDA -->
+<section class="pick-section card" id="pick-nvda" data-ticker="NVDA">
+  <div class="pick-header">
+    <div>
+      <h2><span class="pick-ticker">NVDA</span> <span class="pick-cname">輝達 · NVIDIA Corporation</span></h2>
+      <div class="pick-sub">現價 $222.27　｜　市值 $5367B　｜　Technology / Semiconductors</div>
+    </div>
+    <span class="badge rating-a lg">A</span>
+  </div>
+  <div class="chart-panel" data-pick="NVDA">
+    <div class="btn-group" data-role="strike-presets">
+      <button type="button" data-preset="suggested" class="active risk-btn">建議行使價</button>
+      <button type="button" data-delta="0.15">Δ 0.15</button>
+      <button type="button" data-delta="0.20">Δ 0.20</button>
+      <button type="button" data-delta="0.25">Δ 0.25</button>
+      <button type="button" data-delta="0.30">Δ 0.30</button>
+    </div>
+    <div class="chart-controls">
+      <label>IV <input type="range" class="iv-slider" min="0.10" max="0.80" step="0.005" value="0.3239"><span class="iv-val">32.4%</span></label>
+      <label>現價 Spot <input type="number" class="spot-input" step="0.01" value="222.27"></label>
+      <label>行使價 K <input type="number" class="strike-input" step="0.5" value="210"></label>
+    </div>
+    <div class="live-panel">
+      <div class="live-item"><span class="lbl">行使價</span><span class="live-strike val risk">—</span></div>
+      <div class="live-item"><span class="lbl">實際 Delta</span><span class="live-delta val risk">—</span></div>
+      <div class="live-item"><span class="lbl">權利金估算</span><span class="live-prem val income">—</span></div>
+      <div class="live-item"><span class="lbl">緩衝%</span><span class="live-buf val">—</span></div>
+      <div class="live-item"><span class="lbl">1σ 下限</span><span class="live-sig val amber">—</span></div>
+      <div class="live-item"><span class="lbl">損益平衡</span><span class="live-be val">—</span></div>
+      <div class="live-item"><span class="lbl">年化回報</span><span class="live-ann val income">—</span></div>
+      <div class="live-item"><span class="lbl">接貨資金</span><span class="live-cap val">—</span></div>
+      <div class="live-item"><span class="lbl">DTE</span><span class="live-dte val">33</span></div>
+    </div>
+    <p class="muted" style="margin:8px 0 0">互動 Black-Scholes 面板（r=3.9%）。K 線圖：周末重跑時本機 shell 中斷，OHLC 圖暫略；價格／鏈數據仍來自 9/18 收盤。</p>
+  </div>
+  <div class="two-col">
+    <div>
+      <h3>基本面與入選原因</h3>
+      <p>巨型 AI 龍頭，前瞻本益比約 14、TTM FCF 約 $418 億，上升趨勢中約 5.2% 回檔；Oct23 210 Put mid $3.65、OI>1500、價差緊。</p>
+      <ul class="fund-list">
+        <li>前瞻／過去本益比：14.17 / 28.10</li>
+        <li>TTM FCF：$41.81B　｜　Beta：2.22</li>
+        <li>趨勢：價>SMA50>SMA200；週／月支撐 $207.02 / $189.59</li>
+        <li>HV20 約 45.8%　｜　建議行使價 IV 約 32.4%</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Short Put 建議</h3>
+      <table class="suggest-table">
+        <tr><th>到期日</th><td>2026-10-23（33 DTE）</td></tr>
+        <tr><th>行使價</th><td class="risk">$210 Put</td></tr>
+        <tr><th>Delta</th><td class="risk">-0.253</td></tr>
+        <tr><th>Bid / Ask / Mid</th><td>$3.55 / $3.75 / <span class="income">$3.65</span>（live_mid）</td></tr>
+        <tr><th>IV</th><td>32.39%</td></tr>
+        <tr><th>成交量 / OI</th><td>421 / 1513</td></tr>
+        <tr><th>緩衝</th><td>5.52%</td></tr>
+        <tr><th>接貨資金</th><td>$21,000</td></tr>
+        <tr><th>權利金收入</th><td class="income">$365</td></tr>
+        <tr><th>備選 10/30</th><td>$205　Δ -0.210　$3.28　緩衝 7.77%</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="two-col">
+    <div><h3>被指派風險</h3><ul><li>AI 資本支出週期放緩可能重估倍數</li><li>實現波動偏高，部位宜小於低波防禦股</li><li>競爭敘事可致急跌</li></ul></div>
+    <div><h3>接貨後 Covered Call</h3><p>若於 210 被指派，賣 30–45 DTE、目標 |Δ| 0.20–0.30 的 CC（常約 5–8% OTM），例如 220–230 高 OI 行使價。</p></div>
+  </div>
+</section>
+
+<!-- AMZN -->
+<section class="pick-section card" id="pick-amzn" data-ticker="AMZN">
+  <div class="pick-header">
+    <div>
+      <h2><span class="pick-ticker">AMZN</span> <span class="pick-cname">亞馬遜 · Amazon.com, Inc.</span></h2>
+      <div class="pick-sub">現價 $253.71　｜　市值 $2737B　｜　Consumer Cyclical / Internet Retail</div>
+    </div>
+    <span class="badge rating-a lg">A</span>
+  </div>
+  <div class="chart-panel" data-pick="AMZN">
+    <div class="btn-group" data-role="strike-presets">
+      <button type="button" data-preset="suggested" class="active risk-btn">建議行使價</button>
+      <button type="button" data-delta="0.15">Δ 0.15</button>
+      <button type="button" data-delta="0.20">Δ 0.20</button>
+      <button type="button" data-delta="0.25">Δ 0.25</button>
+      <button type="button" data-delta="0.30">Δ 0.30</button>
+    </div>
+    <div class="chart-controls">
+      <label>IV <input type="range" class="iv-slider" min="0.10" max="0.80" step="0.005" value="0.3013"><span class="iv-val">30.1%</span></label>
+      <label>現價 Spot <input type="number" class="spot-input" step="0.01" value="253.71"></label>
+      <label>行使價 K <input type="number" class="strike-input" step="0.5" value="240"></label>
+    </div>
+    <div class="live-panel">
+      <div class="live-item"><span class="lbl">行使價</span><span class="live-strike val risk">—</span></div>
+      <div class="live-item"><span class="lbl">實際 Delta</span><span class="live-delta val risk">—</span></div>
+      <div class="live-item"><span class="lbl">權利金估算</span><span class="live-prem val income">—</span></div>
+      <div class="live-item"><span class="lbl">緩衝%</span><span class="live-buf val">—</span></div>
+      <div class="live-item"><span class="lbl">1σ 下限</span><span class="live-sig val amber">—</span></div>
+      <div class="live-item"><span class="lbl">損益平衡</span><span class="live-be val">—</span></div>
+      <div class="live-item"><span class="lbl">年化回報</span><span class="live-ann val income">—</span></div>
+      <div class="live-item"><span class="lbl">接貨資金</span><span class="live-cap val">—</span></div>
+      <div class="live-item"><span class="lbl">DTE</span><span class="live-dte val">33</span></div>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <h3>基本面與入選原因</h3>
+      <p>約 11.7% 離 60 日高、站上 SMA200；Oct23 240 Put mid $3.58、Δ≈-0.24、OI~723。注意：yfinance FCF 約 $32 億偏異常，大部位前請對照 10-Q。</p>
+      <ul class="fund-list">
+        <li>前瞻／過去本益比：24.45 / 20.41</li>
+        <li>週／月支撐 $244.30 / $225.55</li>
+        <li>建議行使價 IV 約 30.1%</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Short Put 建議</h3>
+      <table class="suggest-table">
+        <tr><th>到期日</th><td>2026-10-23（33 DTE）</td></tr>
+        <tr><th>行使價</th><td class="risk">$240 Put</td></tr>
+        <tr><th>Delta</th><td class="risk">-0.243</td></tr>
+        <tr><th>Bid / Ask / Mid</th><td>$3.35 / $3.80 / <span class="income">$3.58</span>（live_mid）</td></tr>
+        <tr><th>緩衝</th><td>5.40%</td></tr>
+        <tr><th>接貨資金</th><td>$24,000</td></tr>
+        <tr><th>權利金收入</th><td class="income">$358</td></tr>
+        <tr><th>備選 10/30</th><td>$230　Δ -0.198　$3.95　緩衝 9.35%</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="two-col">
+    <div><h3>被指派風險</h3><ul><li>消費／廣告疲弱致倍數壓縮</li><li>監管／反壟斷</li><li>緩衝僅約 5.4%，可考慮更遠價</li></ul></div>
+    <div><h3>接貨後 Covered Call</h3><p>若於 240 被指派，賣約 30 DTE、250–260（Δ 0.20–0.30）CC。</p></div>
+  </div>
+</section>
+
+<!-- MRK -->
+<section class="pick-section card" id="pick-mrk" data-ticker="MRK">
+  <div class="pick-header">
+    <div>
+      <h2><span class="pick-ticker">MRK</span> <span class="pick-cname">默沙東 · Merck & Company, Inc.</span></h2>
+      <div class="pick-sub">現價 $146.87　｜　市值 $362B　｜　Healthcare / Drug Manufacturers</div>
+    </div>
+    <span class="badge rating-b lg">B</span>
+  </div>
+  <div class="chart-panel" data-pick="MRK">
+    <div class="btn-group" data-role="strike-presets">
+      <button type="button" data-preset="suggested" class="active risk-btn">建議行使價</button>
+      <button type="button" data-delta="0.15">Δ 0.15</button>
+      <button type="button" data-delta="0.20">Δ 0.20</button>
+      <button type="button" data-delta="0.25">Δ 0.25</button>
+      <button type="button" data-delta="0.30">Δ 0.30</button>
+    </div>
+    <div class="chart-controls">
+      <label>IV <input type="range" class="iv-slider" min="0.10" max="0.80" step="0.005" value="0.3063"><span class="iv-val">30.6%</span></label>
+      <label>現價 Spot <input type="number" class="spot-input" step="0.01" value="146.87"></label>
+      <label>行使價 K <input type="number" class="strike-input" step="0.5" value="138"></label>
+    </div>
+    <div class="live-panel">
+      <div class="live-item"><span class="lbl">行使價</span><span class="live-strike val risk">—</span></div>
+      <div class="live-item"><span class="lbl">實際 Delta</span><span class="live-delta val risk">—</span></div>
+      <div class="live-item"><span class="lbl">權利金估算</span><span class="live-prem val income">—</span></div>
+      <div class="live-item"><span class="lbl">緩衝%</span><span class="live-buf val">—</span></div>
+      <div class="live-item"><span class="lbl">1σ 下限</span><span class="live-sig val amber">—</span></div>
+      <div class="live-item"><span class="lbl">損益平衡</span><span class="live-be val">—</span></div>
+      <div class="live-item"><span class="lbl">年化回報</span><span class="live-ann val income">—</span></div>
+      <div class="live-item"><span class="lbl">接貨資金</span><span class="live-cap val">—</span></div>
+      <div class="live-item"><span class="lbl">DTE</span><span class="live-dte val">33</span></div>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <h3>基本面與入選原因</h3>
+      <p>防禦型大型製藥分散：上升趨勢、前瞻本益比約 15.4、FCF 約 $152 億。權利金較薄、價差較寬——次要袖套。</p>
+      <ul class="fund-list">
+        <li>股息殖利率約 2.31%　｜　Beta 0.23</li>
+        <li>週／月支撐 $142.32 / $119.45</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Short Put 建議</h3>
+      <table class="suggest-table">
+        <tr><th>到期日</th><td>2026-10-23（33 DTE）</td></tr>
+        <tr><th>行使價</th><td class="risk">$138 Put</td></tr>
+        <tr><th>Delta</th><td class="risk">-0.230</td></tr>
+        <tr><th>Bid / Ask / Mid</th><td>$1.23 / $2.01 / <span class="income">$1.62</span>（live_mid）</td></tr>
+        <tr><th>緩衝</th><td>6.04%</td></tr>
+        <tr><th>接貨資金</th><td>$13,800</td></tr>
+        <tr><th>備選 10/30</th><td>$135　Δ -0.199　$1.81　緩衝 8.08%</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="two-col">
+    <div><h3>被指派風險</h3><ul><li>Keytruda 專利懸崖／管線風險</li><li>買賣價差寬（1.23/2.01）— 請用限價</li></ul></div>
+    <div><h3>接貨後 Covered Call</h3><p>若於 138 被指派，賣 30–45 DTE、145–150 附近 CC。</p></div>
+  </div>
+</section>
+
+<!-- CRM -->
+<section class="pick-section card" id="pick-crm" data-ticker="CRM">
+  <div class="pick-header">
+    <div>
+      <h2><span class="pick-ticker">CRM</span> <span class="pick-cname">Salesforce, Inc.</span></h2>
+      <div class="pick-sub">現價 $237.92　｜　市值 $196B　｜　Technology / Software - Application</div>
+    </div>
+    <span class="badge rating-cond lg">條件式</span>
+  </div>
+  <div class="chart-panel" data-pick="CRM">
+    <div class="btn-group" data-role="strike-presets">
+      <button type="button" data-preset="suggested" class="active risk-btn">建議行使價</button>
+      <button type="button" data-delta="0.15">Δ 0.15</button>
+      <button type="button" data-delta="0.20">Δ 0.20</button>
+      <button type="button" data-delta="0.25">Δ 0.25</button>
+      <button type="button" data-delta="0.30">Δ 0.30</button>
+    </div>
+    <div class="chart-controls">
+      <label>IV <input type="range" class="iv-slider" min="0.10" max="0.80" step="0.005" value="0.4028"><span class="iv-val">40.3%</span></label>
+      <label>現價 Spot <input type="number" class="spot-input" step="0.01" value="237.92"></label>
+      <label>行使價 K <input type="number" class="strike-input" step="0.5" value="215"></label>
+    </div>
+    <div class="live-panel">
+      <div class="live-item"><span class="lbl">行使價</span><span class="live-strike val risk">—</span></div>
+      <div class="live-item"><span class="lbl">實際 Delta</span><span class="live-delta val risk">—</span></div>
+      <div class="live-item"><span class="lbl">權利金估算</span><span class="live-prem val income">—</span></div>
+      <div class="live-item"><span class="lbl">緩衝%</span><span class="live-buf val">—</span></div>
+      <div class="live-item"><span class="lbl">1σ 下限</span><span class="live-sig val amber">—</span></div>
+      <div class="live-item"><span class="lbl">損益平衡</span><span class="live-be val">—</span></div>
+      <div class="live-item"><span class="lbl">年化回報</span><span class="live-ann val income">—</span></div>
+      <div class="live-item"><span class="lbl">接貨資金</span><span class="live-cap val">—</span></div>
+      <div class="live-item"><span class="lbl">DTE</span><span class="live-dte val">33</span></div>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <h3>基本面與入選原因</h3>
+      <p>流動大型軟體中回檔最佳（約 11%）且仍上升趨勢；前瞻本益比約 15、FCF 約 $177 億。<strong>條件：HV20≈80%，須縮倉。</strong></p>
+    </div>
+    <div>
+      <h3>Short Put 建議</h3>
+      <table class="suggest-table">
+        <tr><th>到期日</th><td>2026-10-23（33 DTE）</td></tr>
+        <tr><th>行使價</th><td class="risk">$215 Put</td></tr>
+        <tr><th>Delta</th><td class="risk">-0.179</td></tr>
+        <tr><th>Bid / Ask / Mid</th><td>$2.88 / $3.20 / <span class="income">$3.04</span>（live_mid）</td></tr>
+        <tr><th>緩衝</th><td>9.63%</td></tr>
+        <tr><th>接貨資金</th><td>$21,500</td></tr>
+        <tr><th>備選 10/30</th><td>$220　Δ -0.249　$5.12　緩衝 7.53%</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="two-col">
+    <div><h3>被指派風險</h3><ul><li>極高實現波動——半倉或更遠價</li><li>軟體倍數壓縮</li></ul></div>
+    <div><h3>接貨後 Covered Call</h3><p>若於 215 被指派，賣 30–40 DTE、220–230 上方 CC；高波動可先用週選。</p></div>
+  </div>
+</section>
+
+<!-- ADBE -->
+<section class="pick-section card" id="pick-adbe" data-ticker="ADBE">
+  <div class="pick-header">
+    <div>
+      <h2><span class="pick-ticker">ADBE</span> <span class="pick-cname">Adobe Inc.</span></h2>
+      <div class="pick-sub">現價 $248.92　｜　市值 $99B　｜　Technology / Software - Application</div>
+    </div>
+    <span class="badge rating-cond lg">條件式</span>
+  </div>
+  <div class="chart-panel" data-pick="ADBE">
+    <div class="btn-group" data-role="strike-presets">
+      <button type="button" data-preset="suggested" class="active risk-btn">建議行使價</button>
+      <button type="button" data-delta="0.15">Δ 0.15</button>
+      <button type="button" data-delta="0.20">Δ 0.20</button>
+      <button type="button" data-delta="0.25">Δ 0.25</button>
+      <button type="button" data-delta="0.30">Δ 0.30</button>
+    </div>
+    <div class="chart-controls">
+      <label>IV <input type="range" class="iv-slider" min="0.10" max="0.80" step="0.005" value="0.3999"><span class="iv-val">40.0%</span></label>
+      <label>現價 Spot <input type="number" class="spot-input" step="0.01" value="248.92"></label>
+      <label>行使價 K <input type="number" class="strike-input" step="0.5" value="230"></label>
+    </div>
+    <div class="live-panel">
+      <div class="live-item"><span class="lbl">行使價</span><span class="live-strike val risk">—</span></div>
+      <div class="live-item"><span class="lbl">實際 Delta</span><span class="live-delta val risk">—</span></div>
+      <div class="live-item"><span class="lbl">權利金估算</span><span class="live-prem val income">—</span></div>
+      <div class="live-item"><span class="lbl">緩衝%</span><span class="live-buf val">—</span></div>
+      <div class="live-item"><span class="lbl">1σ 下限</span><span class="live-sig val amber">—</span></div>
+      <div class="live-item"><span class="lbl">損益平衡</span><span class="live-be val">—</span></div>
+      <div class="live-item"><span class="lbl">年化回報</span><span class="live-ann val income">—</span></div>
+      <div class="live-item"><span class="lbl">接貨資金</span><span class="live-cap val">—</span></div>
+      <div class="live-item"><span class="lbl">DTE</span><span class="live-dte val">33</span></div>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <h3>基本面與入選原因</h3>
+      <p>深回檔約 15.5%、前瞻本益比約 9、FCF 約 $91 億。<strong>條件：價差極寬（2.45/4.55），必須限價，假設成交靠近 bid。</strong></p>
+    </div>
+    <div>
+      <h3>Short Put 建議</h3>
+      <table class="suggest-table">
+        <tr><th>到期日</th><td>2026-10-23（33 DTE）</td></tr>
+        <tr><th>行使價</th><td class="risk">$230 Put</td></tr>
+        <tr><th>Delta</th><td class="risk">-0.228</td></tr>
+        <tr><th>Bid / Ask / Mid</th><td>$2.45 / $4.55 / <span class="income">$3.50</span>（live_mid）</td></tr>
+        <tr><th>緩衝</th><td>7.60%</td></tr>
+        <tr><th>接貨資金</th><td>$23,000</td></tr>
+        <tr><th>備選 10/30</th><td>$225　Δ -0.203　$4.08　緩衝 9.61%</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="two-col">
+    <div><h3>被指派風險</h3><ul><li>寬價差可能高估可成交權利金</li><li>AI 競爭敘事</li><li>趨勢僅站上 SMA200</li></ul></div>
+    <div><h3>接貨後 Covered Call</h3><p>若於 230 被指派，待價差正常化後賣 30–45 DTE、245–255 CC。</p></div>
+  </div>
+</section>
+
+<section id="rejected" class="card">
+  <h2>剔除名單</h2>
+  <div style="overflow-x:auto">
+  <table class="reject-table">
+    <thead><tr><th>代號</th><th>剔除原因</th><th>違反條件</th></tr></thead>
+    <tbody>
+      <tr><td><strong>SOFI</strong></td><td>市值約 $220 億，低於 $500 億門檻。</td><td><code>市值門檻</code></td></tr>
+      <tr><td><strong>TSLA</strong></td><td>前瞻本益比約 166、結構性高波動、趨勢偏弱。</td><td><code>基本面＋投機</code></td></tr>
+      <tr><td><strong>PLTR</strong></td><td>前瞻本益比約 76，投機熔漲輪廓。</td><td><code>投機／熔漲</code></td></tr>
+      <tr><td><strong>AMD / MU / ASML / LLY / META / MSFT / GS</strong></td><td>股價遠高於 ~$300 偏好或接貨資金過重。</td><td><code>股價偏好</code></td></tr>
+      <tr><td><strong>AAPL</strong></td><td>股價約 $336；回檔僅約 2.4%；前瞻本益比約 35。</td><td><code>股價＋回檔不足</code></td></tr>
+      <tr><td><strong>INTC / BA / NKE / ORCL / COST</strong></td><td>估值／FCF／執行風險不符安心接貨。</td><td><code>基本面</code></td></tr>
+      <tr><td><strong>NFLX / CAT / UNH / AVGO</strong></td><td>深回撤或低於均線，非有序回檔。</td><td><code>技術面</code></td></tr>
+      <tr><td><strong>XOM / CVX</strong></td><td>WTI 約 $96.08 且地緣波動仍在——能源 Short Put 暫緩。</td><td><code>宏觀商品風險</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="exec" class="card">
+  <h2>執行清單</h2>
+  <ol class="exec-list">
+    <li><strong>核實期權鏈</strong> — 確認報價、OI、買賣價差；勿盲目相信 mid。</li>
+    <li><strong>核實財報／除息日</strong> — 避免到期窗口內事件跳空。</li>
+    <li><strong>落單</strong> — 限價靠近 mid；CRM／ADBE 半倉；價差過寬時假設靠近 bid。</li>
+    <li><strong>止賺與防守</strong> — 權利金收斂 50–70% 可考慮平倉；跌破週線支撐且 Δ 惡化則評估滾倉／減倉。</li>
+    <li><strong>窗口宏觀</strong> — 10/2 NFP；10/7 FOMC 紀要；10/14 CPI；10/23 到期；10/28 FOMC。</li>
+  </ol>
+</section>
+
+<section id="gaps" class="card">
+  <h2>資料缺口與注意</h2>
+  <ul>
+    <li>2026-09-20 香港時間週日 20:00 自動化重跑；美股休市，價格／期權為 2026-09-18 收盤（Yahoo 鏈快照）。</li>
+    <li>真正 IV Rank／Percentile 無法由 yfinance 取得；改用實現波動代理＋選定行使價 IV。</li>
+    <li>AMZN yfinance freeCashflow（約 $32 億）疑似異常——請對照 SEC 申報。</li>
+    <li>MRK／ADBE 買賣價差偏寬——mid 未必可完全成交。</li>
+    <li>各標的下次財報日未全面核實。</li>
+    <li>本頁為周末 shell 中斷後的精簡發布版：保留完整入選數據與 BS 互動面板；完整 K 線互動圖見稍早同日 raw.githack 備份塊（若仍載入舊 loader 可強制重新整理）。</li>
+  </ul>
+</section>
+
+<footer>
+  來源：yfinance（價格／基本面／Yahoo 期權鏈）；Fed FOMC 日曆（10/27–28）；BLS（NFP 10/2、CPI 10/14）。非投資建議。每週日 20:00（香港時間）自動化更新。
+</footer>
+</div>
+
 <script>
-(async()=>{
-  const n=9;
-  const parts=await Promise.all([...Array(n)].map((_,i)=>
-    fetch('b'+i+'.txt').then(r=>{if(!r.ok)throw new Error(i+':'+r.status);return r.text();})
-  ));
-  const bin=Uint8Array.from(atob(parts.join('')),c=>c.charCodeAt(0));
-  const html=await new Response(new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
-  document.open();document.write(html);document.close();
-})().catch(e=>{document.body.innerHTML='<pre>Failed: '+e+'\nOpen via raw.githack or jsDelivr.</pre>';});
+const R=0.039, DTE=33, T=DTE/365;
+const PICKS={
+  NVDA:{S:222.27,K:210,iv:0.3239,q:0.0045,premLive:3.65},
+  AMZN:{S:253.71,K:240,iv:0.3013,q:0,premLive:3.58},
+  MRK:{S:146.87,K:138,iv:0.3063,q:0.0231,premLive:1.62},
+  CRM:{S:237.92,K:215,iv:0.4028,q:0.0074,premLive:3.04},
+  ADBE:{S:248.92,K:230,iv:0.3999,q:0,premLive:3.5}
+};
+function ncdf(x){const a1=0.254829592,a2=-0.284496736,a3=1.421413741,a4=-1.453152027,a5=1.061405429,p=0.3275911;const s=x<0?-1:1;x=Math.abs(x)/Math.SQRT2;const t=1/(1+p*x);const y=1-(((((a5*t+a4)*t)+a3)*t+a2)*t+a1)*t*Math.exp(-x*x);return 0.5*(1+s*y)}
+function bsPut(S,K,T,r,sig,q){if(S<=0||K<=0||T<=0||sig<=0)return null;const d1=(Math.log(S/K)+(r-q+0.5*sig*sig)*T)/(sig*Math.sqrt(T));const d2=d1-sig*Math.sqrt(T);return K*Math.exp(-r*T)*ncdf(-d2)-S*Math.exp(-q*T)*ncdf(-d1)}
+function bsPutDelta(S,K,T,r,sig,q){if(S<=0||K<=0||T<=0||sig<=0)return null;const d1=(Math.log(S/K)+(r-q+0.5*sig*sig)*T)/(sig*Math.sqrt(T));return -Math.exp(-q*T)*ncdf(-d1)}
+function strikeForDelta(S,T,r,sig,q,targetAbs){let lo=S*0.5,hi=S*0.995,best=S*0.94;for(let i=0;i<60;i++){const mid=(lo+hi)/2;const d=bsPutDelta(S,mid,T,r,sig,q);if(d==null)break;best=mid;if(Math.abs(d)>targetAbs)hi=mid;else lo=mid}return best}
+function fmt(n,d=2){return n==null?'—':Number(n).toFixed(d)}
+function updatePanel(panel){
+  const t=panel.getAttribute('data-pick');const meta=PICKS[t];if(!meta)return;
+  const iv=+panel.querySelector('.iv-slider').value;const S=+panel.querySelector('.spot-input').value;const K=+panel.querySelector('.strike-input').value;
+  panel.querySelector('.iv-val').textContent=(iv*100).toFixed(1)+'%';
+  const prem=bsPut(S,K,T,R,iv,meta.q);const delta=bsPutDelta(S,K,T,R,iv,meta.q);
+  const buf=(S-K)/S*100;const sig1=S*Math.exp(-iv*Math.sqrt(T));const be=K-(prem||0);const cap=K*100;const ann=prem&&cap? (prem*100/cap)*(365/DTE)*100:null;
+  panel.querySelector('.live-strike').textContent='$'+fmt(K,1);
+  panel.querySelector('.live-delta').textContent=delta==null?'—':delta.toFixed(3);
+  panel.querySelector('.live-prem').textContent=prem==null?'—':'$'+fmt(prem);
+  panel.querySelector('.live-buf').textContent=fmt(buf,2)+'%';
+  panel.querySelector('.live-sig').textContent='$'+fmt(sig1,2);
+  panel.querySelector('.live-be').textContent='$'+fmt(be,2);
+  panel.querySelector('.live-ann').textContent=ann==null?'—':fmt(ann,1)+'%';
+  panel.querySelector('.live-cap').textContent='$'+Math.round(cap).toLocaleString();
+}
+document.querySelectorAll('.chart-panel').forEach(panel=>{
+  const t=panel.getAttribute('data-pick');const meta=PICKS[t];
+  const sync=()=>updatePanel(panel);
+  panel.querySelector('.iv-slider').addEventListener('input',sync);
+  panel.querySelector('.spot-input').addEventListener('input',sync);
+  panel.querySelector('.strike-input').addEventListener('input',sync);
+  panel.querySelectorAll('[data-role=strike-presets] button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      panel.querySelectorAll('[data-role=strike-presets] button').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const iv=+panel.querySelector('.iv-slider').value;const S=+panel.querySelector('.spot-input').value;
+      let K=meta.K;
+      if(btn.dataset.preset==='suggested')K=meta.K;
+      else if(btn.dataset.delta)K=strikeForDelta(S,T,R,iv,meta.q,+btn.dataset.delta);
+      panel.querySelector('.strike-input').value=(Math.round(K*2)/2).toFixed(1);
+      sync();
+    });
+  });
+  sync();
+});
+document.getElementById('theme-toggle').addEventListener('click',()=>{
+  const cur=document.documentElement.getAttribute('data-theme');
+  const next=cur==='dark'?'light':cur==='light'?'dark':(matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark');
+  document.documentElement.setAttribute('data-theme',next);
+});
 </script>
-<noscript>Enable JS for Short Put (NVDA) report.</noscript>
-</body></html>
+</body>
+</html>
