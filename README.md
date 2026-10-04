@@ -2,29 +2,31 @@
 
 Interactive short-put screening report with OHLC candlestick charts (Black–Scholes panel included).
 
-**Report date:** 2026-09-27 (prices / chains as of 2026-09-25 US close)
+**Report date:** 2026-10-04 (prices / chains as of 2026-10-02 US close)
 
-**Target expiry:** 2026-10-30 (33 DTE) — note: expires after FOMC 2026-10-27/28
+**Target expiry:** 2026-11-06 (33 DTE) — note: holds through FOMC 2026-10-27/28; next FOMC 2026-12-08/09
+
+**Alt expiry:** 2026-10-30 (26 DTE)
 
 ## Preview
 
 - [raw.githack](https://raw.githack.com/tracyng95/us-short-put/main/index.html)
 - [jsDelivr](https://cdn.jsdelivr.net/gh/tracyng95/us-short-put@main/index.html)
 
-`index.html` is a tiny loader: it fetches gzip+base64 chunks (`b0.txt`…`b7.txt`), decompresses with `DecompressionStream('gzip')`, and writes the full interactive report into the page.
+`index.html` is a tiny loader: it fetches gzip+base64 chunks (`b0.txt`…`b8.txt`), decompresses with `DecompressionStream('gzip')`, and writes the full interactive report into the page.
 
 ## Picks
 
 | Ticker | Rating | Strike | Approx Δ | Premium (Yahoo mid) |
 |--------|--------|--------|----------|---------------------|
-| XOM | A | 150 | -0.215 | $1.80 |
-| NVDA | A | 210 | -0.215 | $3.03 |
-| CRM | B | 215 | -0.216 | $3.78 |
-| CVX | B | 190 | -0.198 | $1.98 |
-| MRK | 條件式 | 140 | -0.275 | $2.83 |
+| CRM | A | 215 | -0.216 | $3.83 |
+| XOM | A | 155 | -0.258 | $2.35 |
+| AMZN | B | 230 | -0.200 | $3.65 |
+| QCOM | B | 165 | -0.209 | $3.93 |
+| CVX | B | 195 | -0.243 | $2.57 |
 
 ## Integrity
 
-Full report SHA-256: `3437ef94473f7df017b2884b319e07c4561f462fe757cf1abe6a7ffb28018f4e` (96967 bytes)
+Full report SHA-256: `7cb94f9575c19bb6f793e4e9348619225fa750245dc2490650f6fd1007094c52` (104886 bytes)
 
 ⚠️ 權利金與 Delta 須以即時期權鏈核實。
