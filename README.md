@@ -1,25 +1,6 @@
-# US Short Put 每週篩選報告
+# US Short Put Weekly Screen — 2026-10-25
 
-**報告日：** 2026-10-18（Asia/Hong_Kong）  
-**價格截至：** 2026-10-16（美股週五收）  
-**優先到期：** 2026-11-20（33 DTE）  
-**備選到期：** 2026-11-13（26 DTE；仍穿越 FOMC）  
-**下一次 FOMC：** 2026-10-27/28（其後 2026-12-08/09）
+Interactive Traditional Chinese report. Open `index.html` (loader reconstructs full page from gzip+base64 chunks `b0.txt`…).
 
-## 本週精選
-| 評級 | 標的 | 履約價 | 約 Δ | 權利金 mid | 緩衝 |
-|------|------|--------|------|------------|------|
-| A | CRM | $220 | -0.22 | $4.38 | ~8.6% |
-| B | ADBE | $225 | -0.23 | $4.68 | ~8.2% |
-| B | MRK | $135 | -0.22 | $2.24 | ~7.5% |
-| 條件式 | AMZN | $230 | -0.23 | $4.60 | ~8.0% |
-| 條件式 | NVDA | $195 | -0.21 | $3.88 | ~8.9% |
-
-## 預覽
-- 主連結：https://raw.githack.com/tracyng95/us-short-put/main/index.html
-- 備援：https://cdn.jsdelivr.net/gh/tracyng95/us-short-put@main/index.html
-
-## 警告
-權利金與 Delta 須以即時期權鏈核實。本報告不構成投資建議。
-
-SHA256(`index.html` 完整報告)：`e85e6dc5d6240398e636bede78d4b8c51af444130c46ebd41d2de1e3736b59c1`
+- Primary preview: https://raw.githack.com/tracyng95/us-short-put/main/index.html
+- Backup: https://cdn.jsdelivr.net/gh/tracyng95/us-short-put@main/index.html
